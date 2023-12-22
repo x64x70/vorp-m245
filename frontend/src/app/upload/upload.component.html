@@ -1,0 +1,6 @@
+<div>
+    <h1>Upload a summary</h1>
+    <input accept=".pdf" type="file" (change)="onFileSelected($event)">
+    <embed *ngIf="this.safeResource != undefined" [src]="this.safeResource" type="application/pdf">
+    <button (click)="this.upload()">Upload</button>
+</div>

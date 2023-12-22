@@ -1,0 +1,8 @@
+<div>
+    <ul>
+        <li *ngFor="let file of this.getFiles()">
+            <p>{{file.name}}</p>
+            <button (click)="this.download(file)">Download</button>
+        </li>
+    </ul>
+</div>
