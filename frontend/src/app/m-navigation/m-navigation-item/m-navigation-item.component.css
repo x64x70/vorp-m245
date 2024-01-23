@@ -1,0 +1,21 @@
+:host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-grow: 1;
+    border-radius: .5rem;
+    color: royalblue;
+    background-color: white;
+    transition: background-color .2s linear, color .2s linear;
+    cursor: pointer;
+}
+
+p {
+    font-size: .75rem;
+}
+ 
+:host:hover {
+    background-color: royalblue;
+    color: white;
+}

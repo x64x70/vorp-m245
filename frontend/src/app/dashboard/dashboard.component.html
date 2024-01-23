@@ -1,0 +1,28 @@
+<div class="topbar">
+    <div class="logo">
+        <img src="/assets/logo.png" alt="vorp logo">
+        <p>Dashboard</p>
+    </div>
+    <div class="nav">
+        <a>List</a>
+        <a>Upload</a>
+    </div>
+</div>
+
+<div class="list">
+    <h1>Results</h1>
+    <div class="results">
+        <div class="summary" *ngFor="let summary of summaries">
+            <div class="img">
+                <img src="https://media.discordapp.net/attachments/929807268994744340/1146144048743206952/watermark.gif?ex=65b93ad3&is=65a6c5d3&hm=261a03f4a29f5b727ef05b9bb7cbc572ab7ddb36e3608772637909c8cb83a181&"
+                    alt="">
+            </div>
+            <div class="desc">
+                <p class="title">{{summary.title}}</p>
+                <p class="author">By {{ summary.author }}</p>
+                <button>Download</button>
+            </div>
+
+        </div>
+    </div>
+</div>

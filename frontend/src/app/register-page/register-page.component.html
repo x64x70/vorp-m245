@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="logo-wrapper">
+        <img src="/assets/logo.png" alt="vorp logo">
+        <p>Register for an account</p>
+    </div>
+    <div class="data-wrapper">
+        <h1>Enter your details</h1>
+        <div class="row">
+            <div class="col">
+                <label for="first-name">First Name</label>
+                <input [(ngModel)]="firstName" name="first-name" type="text">
+            </div>
+            <div class="col">
+                <label for="last-name">Last Name</label>
+                <input [(ngModel)]="lastName" name="last-name" type="text">
+            </div>
+        </div>
+        <label for="username">Username</label>
+        <input [(ngModel)]="username" name="username" type="text">
+        <label for="email">Email</label>
+        <input [(ngModel)]="email" name="email" type="email">
+        <div class="row">
+            <div class="col">
+                <label for="password">Password</label>
+                <input [(ngModel)]="password" name="password" type="password">
+            </div>
+            <div class="col">
+                <label for="confirm-password">Confirm Password</label>
+                <input [(ngModel)]="passwordConfirm" name="confirm-password" type="password">
+            </div>
+        </div>
+        <a [routerLink]="'/login'">Already have an account?</a>
+        <button (click)="register()">Register</button>
+    </div>
+
+</div>
